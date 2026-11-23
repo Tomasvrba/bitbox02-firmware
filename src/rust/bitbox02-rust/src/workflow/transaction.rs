@@ -70,7 +70,7 @@ pub async fn verify_total_fee_maybe_warn_with_basis(
     fee_percentage: Option<f64>,
     fee_percentage_basis: FeePercentageBasis,
 ) -> Result<(), UserAbort> {
-    const FEE_WARNING_THRESHOLD: f64 = 10.;
+    const FEE_WARNING_THRESHOLD: f64 = 20.;
     let fee_percentage = fee_percentage.filter(|&f| f >= FEE_WARNING_THRESHOLD);
     let longtouch = fee_percentage.is_none();
     hal.ui().verify_total_fee(total, fee, longtouch).await?;
