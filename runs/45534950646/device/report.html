@@ -1,0 +1,69 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>e2e: Tomasvrba/e91fb2ee75978bb8cee3945bfb6285112f8b9697</title><style>
+:root{--bg:#f6f7f9;--card:#fff;--fg:#1b1f24;--muted:#5b6470;--line:#d9dde3;--code:#eef1f4;
+--bad:#b42318;--bad-bg:#fdecea;--ok:#1a7f37;--ok-bg:#e8f5ec;--warn:#9a6700;--warn-bg:#fff6dd;--accent:#2f6feb}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1115;--card:#171a20;--fg:#e6e8eb;--muted:#9aa3ad;
+--line:#2a2f37;--code:#232830;--bad:#ff7b72;--bad-bg:#3a1714;--ok:#56d364;--ok-bg:#12301b;
+--warn:#e3b341;--warn-bg:#33290d;--accent:#6ea8fe}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
+main{max-width:1100px;margin:0 auto;padding:24px 16px 64px}
+a{color:var(--accent)}
+code,pre{font:13px/1.45 ui-monospace,SFMono-Regular,Menlo,monospace;background:var(--code);border-radius:4px}
+code{padding:1px 4px;overflow-wrap:anywhere}
+pre{padding:10px 12px;overflow-x:auto;white-space:pre-wrap;overflow-wrap:anywhere;margin:8px 0}
+.eyebrow{color:var(--muted);font-size:13px;letter-spacing:.04em;text-transform:uppercase}
+h1{font-size:26px;line-height:1.25;margin:4px 0 6px}
+h2{font-size:19px;margin:32px 0 10px}
+h3{font-size:16px;margin:0}
+.meta{color:var(--muted);font-size:14px}
+.banner{margin:20px 0;padding:16px 18px;border-radius:8px;border:1px solid}
+.banner .big{font-size:22px;font-weight:650}
+.banner.fail{background:var(--bad-bg);border-color:var(--bad);color:var(--bad)}
+.banner.pass{background:var(--ok-bg);border-color:var(--ok);color:var(--ok)}
+.banner.warn{background:var(--warn-bg);border-color:var(--warn);color:var(--warn)}
+.banner .sub{color:var(--fg)}
+.callout{padding:10px 14px;border-left:4px solid var(--warn);background:var(--warn-bg);border-radius:4px;margin:10px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0}
+.card.bad{border-left:4px solid var(--bad)}
+.card-head{display:flex;gap:10px;align-items:baseline;justify-content:space-between;flex-wrap:wrap}
+.muted,.where{color:var(--muted);font-size:14px}
+.pairs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}
+.pairs .h{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.screen{background:var(--code);border-radius:6px;padding:8px 10px;white-space:pre-line;font-size:14px}
+.screen .kind{font-size:11px;color:var(--muted);text-transform:uppercase}
+.screen .t{font-weight:650}
+.screen .k{color:var(--muted)}
+.absent{color:var(--muted);font-style:italic;padding:8px 10px;border:1px dashed var(--line);
+border-radius:6px;text-align:center}
+.cmp{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:10px 0;align-items:start}
+.cmp .h{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.cmp.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.cmp .label{grid-column:1/-1;font-weight:600;font-size:14px;margin-top:6px}
+.cmp img{width:100%;height:auto;display:block;border-radius:4px;border:1px solid var(--line);image-rendering:pixelated}
+.cmp img.photo{image-rendering:auto}
+.filmstrip{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;
+margin:10px 0;align-items:start}
+.filmstrip figure{margin:0;display:flex;flex-direction:column;gap:4px}
+.filmstrip figcaption{font-size:12px;color:var(--muted);overflow-wrap:anywhere}
+.filmstrip img{width:100%;height:auto;display:block;border-radius:4px;border:1px solid var(--line);
+image-rendering:pixelated}
+.filmstrip img.photo{image-rendering:auto}
+details{margin:10px 0}summary{cursor:pointer;font-weight:600}
+details>div{padding:4px 0 0 16px}
+table{border-collapse:collapse;font-size:14px;margin:8px 0;display:block;overflow-x:auto}
+td,th{border:1px solid var(--line);padding:4px 8px;text-align:left;vertical-align:top}
+ul{padding-left:20px}li{margin:3px 0}
+@media (max-width:640px){.screen{font-size:12px;padding:6px}}
+</style>
+<main><header>
+<div class="eyebrow">BitBox e2e · BitBoxSwiss/bitbox02-firmware</div>
+<h1>Tomasvrba/e91fb2ee75978bb8cee3945bfb6285112f8b9697</h1>
+<div class="meta">before: <code>53e8acf83</code>, where the PR branched off → after: <code>Tomasvrba/e91fb2ee75978bb8cee3945bfb6285112f8b9697</code> (<code>e91fb2ee7</code>)</div>
+</header>
+<section class="banner pass"><div class="big">Nothing broke</div><div class="sub">No device screen changed</div></section>
+<h2>What changed on the device</h2>
+<p>No device screen is different with this PR.</p>
+<h2>What was tested</h2><ul><li>88 device scenarios (2 scenarios, 49 Ethereum chain cases, 37 BTC test vectors), each run on the simulator before and after this PR. Their screens are compared as text.</li><li>No screenshots: no screen changed.</li><li>The api-go library's simulator tests: 82 of 82 pass with the test vectors committed in api-go (before: 82 of 82); 82 of 82 pass with the firmware's test vectors (before: 82 of 82).</li><li>The api-rs library's simulator tests: 53 of 53 pass with the test vectors committed in api-rs (before: 53 of 53); 53 of 53 pass with the firmware's test vectors (before: 53 of 53).</li><li>The api-ts library's simulator tests: 26 of 26 pass with the test vectors committed in api-ts (before: 26 of 26); 26 of 26 pass with the firmware's test vectors (before: 26 of 26).</li></ul>
+<details><summary>Run details</summary><div><table><tr><th></th><th>Before</th><th>After</th></tr><tr><th>firmware</th><td>53e8acf83</td><td>e91fb2ee7</td></tr><tr><th>simulator</th><td>bitbox02-multi-v9.30.0-simulator1.0.0-linux-amd64</td><td>bitbox02-multi-v9.30.0-simulator1.0.0-linux-amd64</td></tr><tr><th>test tool</th><td>65991bedd</td><td>65991bedd</td></tr><tr><th>driver bitbox-api-rs</th><td>3e8b35ca0</td><td>3e8b35ca0</td></tr><tr><th>api-go</th><td>643f20da8</td><td>643f20da8</td></tr><tr><th>api-rs</th><td>3e8b35ca0</td><td>3e8b35ca0</td></tr><tr><th>api-ts</th><td>faba7fd78</td><td>faba7fd78</td></tr></table><ul><li>Run mode: network namespaces available; headless units in parallel, own port each; graphical on head: none run, on base: none run; API suites: parallel, one network namespace each</li><li>Timings: baseline headless 252s, baseline apis 114s, baseline 0s, head build 184s, head headless 68s, graphical 0s, lane B 29s, report 0s</li><li>Data: pr.json; logs: head/units/*/headless, apis/*.log.</li></ul></div></details>
+</main>
+</html>
