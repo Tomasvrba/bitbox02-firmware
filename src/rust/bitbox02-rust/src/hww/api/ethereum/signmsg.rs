@@ -141,7 +141,7 @@ mod tests {
                     longtouch: false,
                 },
                 Screen::Confirm {
-                    title: "Sign message".into(),
+                    title: "Confirm ETH message".into(),
                     body: MESSAGE.into(),
                     longtouch: true,
                 },
@@ -183,7 +183,7 @@ mod tests {
                     longtouch: false,
                 },
                 Screen::Confirm {
-                    title: "Sign message".into(),
+                    title: "Confirm ETH message".into(),
                     body: msg,
                     longtouch: true,
                 },
@@ -223,7 +223,7 @@ mod tests {
                     longtouch: false,
                 },
                 Screen::Confirm {
-                    title: "Sign message".into(),
+                    title: "Confirm ETH message".into(),
                     body: MESSAGE.into(),
                     longtouch: true,
                 },
@@ -277,7 +277,7 @@ mod tests {
                     longtouch: false,
                 },
                 Screen::Confirm {
-                    title: "Sign message".into(),
+                    title: "Confirm ETH message".into(),
                     body: MESSAGE.into(),
                     longtouch: true,
                 },
