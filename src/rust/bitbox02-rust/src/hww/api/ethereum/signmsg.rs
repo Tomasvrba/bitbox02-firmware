@@ -40,9 +40,9 @@ pub async fn process(
     // abort errors.
     super::pubrequest::process(hal, &pub_request).await?;
 
-    let title = crate::tr!(hal, "Sign message");
+    let title = "Confirm ETH message";
     let accept = crate::tr!(hal, "Sign");
-    verify_message::verify(hal, &title, &accept, &request.msg, true).await?;
+    verify_message::verify(hal, title, &accept, &request.msg, true).await?;
 
     // Construct message to be signed. There is no standard for this. We match what MyEtherWallet,
     // Trezor, etc. do, e.g.:

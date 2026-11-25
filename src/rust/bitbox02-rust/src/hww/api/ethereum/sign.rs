@@ -28,7 +28,7 @@ const WEI_DECIMALS: usize = 18;
 
 // Streaming data size limits
 const MAX_STREAMING_DATA_LENGTH: u32 = 1024 * 1024;
-const MAX_NONSTREAMING_DATA_LENGTH: usize = 6144;
+const MAX_NONSTREAMING_DATA_LENGTH: usize = 4096;
 
 pub enum Transaction<'a> {
     Legacy(&'a pb::EthSignRequest),
