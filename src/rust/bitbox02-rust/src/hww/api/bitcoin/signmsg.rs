@@ -54,7 +54,7 @@ pub async fn process(
 ) -> Result<Response, Error> {
     let coin = BtcCoin::try_from(request.coin)?;
     super::coin_enabled(coin)?;
-    if !matches!(coin, BtcCoin::Btc | BtcCoin::Tbtc) {
+    if !matches!(coin, BtcCoin::Btc | BtcCoin::Tbtc | BtcCoin::Rbtc) {
         return Err(Error::InvalidInput);
     }
     let (keypath, simple_type) = match &request.script_config {
